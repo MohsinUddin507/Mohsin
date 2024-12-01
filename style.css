@@ -511,7 +511,9 @@ form button:hover {
     .mobile-menu-btn {
         display: block;
     }
-
+#loading-text{
+    font-size:1.8rem;
+}
     .nav-links {
         display: none;
         flex-direction: column;
