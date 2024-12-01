@@ -2,7 +2,7 @@
 const initLoadingAnimation = () => {
     const loadingScreen = document.getElementById('loading-screen');
     const loadingText = document.getElementById('loading-text');
-    const text = "Welcome to my Portfolio";
+    const text = "Welcome to Portfolio";
     let charIndex = 0;
 
     const typeText = () => {
