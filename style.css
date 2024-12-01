@@ -462,6 +462,9 @@ form button:hover {
     .hero-text h2{
         height: 240px;
     }
+    .hero-text p{
+        width:150px
+    }
 
     .contact-info {
         text-align: center;
