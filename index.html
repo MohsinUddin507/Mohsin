@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohsin Uddin - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <span id="loading-text"></span>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1>Mohsin Uddin</h1>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <button class="download-cv">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Hi, I'm <span class="typed-text"></span></h2>
+                        <p>A passionate developer with expertise in ASP.NET, C#, and web technologies. Building robust and scalable applications is my forte.</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="primary-btn">Contact Me</a>
+                            <a href="#projects" class="secondary-btn">View Work</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="Image/MyPic.jpg" alt="Mohsin Uddin">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul>
+                    <li><i class="fa-solid fa-code"></i> ASP.NET Core with MVC and Web API development</li>
+                    <li><i class="fa-solid fa-database"></i> Entity Framework Core for database management</li>
+                    <li><i class="fa-solid fa-mobile"></i> Flutter and Dart for mobile application development</li>
+                    <li><i class="fa-solid fa-laptop-code"></i> HTML5, CSS3, Bootstrap, and JavaScript</li>
+                    <li><i class="fa-solid fa-shield-alt"></i> Authentication and Authorization using Identity and OAuth</li>
+                    <li><i class="fa-solid fa-file-excel"></i> Microsoft Office: Excel, Word, PowerPoint</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <i class="fa-solid fa-chalkboard-teacher experience-icon"></i>
+                    <h3>IT Faculty</h3>
+                    <p><strong>Aptech-Karachi</strong> | June 2024 to Present</p>
+                    <p>I teach Flutter, Dart, HTML, CSS3, Bootstrap, JavaScript, MS Office, C#, and .NET Core.</p>
+                </div>
+                <div class="experience-item">
+                    <i class="fa-solid fa-briefcase experience-icon"></i>
+                    <h3>Junior Web Developer</h3>
+                    <p><strong>Software House-Karachi</strong> | January 2022 to March 2022</p>
+                    <p>Worked collaboratively on ASP.NET projects, developing scalable web applications and assisting in backend and frontend integration tasks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300" alt="Portfolio Website">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio website showcasing my skills and projects.</p>
+                        <div class="project-links">
+                            <a href="https://ihadi.net/" target="_blank" class="primary-btn">
+                                <i class="fa-solid fa-external-link"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out to me via email, phone, or the form below. I'd love to hear from you!</p>
+                <div class="contact-content">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>mohsinuddin507@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>0345 2522582</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            <p>Karachi 76200</p>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="primary-btn">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const options = {
+                strings: ['Mohsin Uddin', 'an ASP.NET Developer', 'an IT Faculty'],
+                typeSpeed: 100,
+                backSpeed: 50,
+                loop: true,
+            };
+
+            new Typed('.typed-text', options);
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+      <script src="js/animations.js"></script>
+
+      <script src="js/navigation.js"></script>
+      <script src="js/form.js"></script>
+      <script src="js/main.js"></script>
+</body>
+</html>
