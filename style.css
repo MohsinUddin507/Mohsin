@@ -212,8 +212,8 @@ width: 50%;
 }
 
 .hero-image img {
-    max-width: 90%;
-    height: 100%;
+    max-width: 80%;
+    
     border-radius: 50%;
 }
 .hero-image{
