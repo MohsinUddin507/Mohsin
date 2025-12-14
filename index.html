@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohsin Uddin - Portfolio</title>
+    <title>Mohsin Uddin | Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="components.css">
     <link rel="stylesheet" href="layout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Loading Screen -->
     <div id="loading-screen">
-        <span id="loading-text"></span>
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+            <span id="loading-text">Mohsin Uddin</span>
+        </div>
     </div>
 
     <!-- Navigation -->
-    <nav>
+    <nav class="navbar">
         <div class="container">
-            <h1>Mohsin Uddin</h1>
+            <a href="#hero" class="logo">MU</a>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-                <a href="Mohsin.pdf" download="Mohsin.pdf" class="download-cv-button">
-                    <i class="fa-solid fa-download"></i> Download CV
+                <a href="Mohsin.pdf" download="Mohsin.pdf" class="btn-download">
+                    <i class="fa-solid fa-download"></i> Resume
                 </a>
             </div>
             <button class="mobile-menu-btn">
@@ -42,149 +45,329 @@
 
     <!-- Hero Section -->
     <main>
-        <section id="hero">
+        <section id="hero" class="hero-section">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h2>Hi, I'm <span class="typed-text"></span></h2>
-                        <p>Results-driven Full Stack Developer with experience in building secure, scalable web and mobile applications. Skilled in Laravel, React.js, Flutter, and SQL-based databases.</p>
+                        <div class="hero-badge">Full Stack Developer</div>
+                        <h1>Hi, I'm <span class="typed-text"></span></h1>
+                        <p class="hero-subtitle">Crafting exceptional digital experiences with Laravel, React, and Flutter. Passionate about building scalable applications that solve real-world problems.</p>
                         <div class="cta-buttons">
-                            <a href="#contact" class="primary-btn">Contact Me</a>
-                            <a href="#projects" class="secondary-btn">View Work</a>
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fa-solid fa-paper-plane"></i> Get In Touch
+                            </a>
+                            <a href="#projects" class="btn btn-outline">
+                                <i class="fa-solid fa-code"></i> View Projects
+                            </a>
                         </div>
-                        <div class="hero-contact-info">
-                            <div class="contact-item">
-                                <i class="fa-solid fa-map-marker-alt"></i>
-                                <span>Nazimabad No. 1, Karachi, Pakistan</span>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Years Experience</span>
                             </div>
-                            <div class="contact-item">
-                                <i class="fa-solid fa-phone"></i>
-                                <span>+92 345 2522582</span>
+                            <div class="stat">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Projects Completed</span>
                             </div>
-                            <div class="contact-item">
-                                <i class="fa-solid fa-envelope"></i>
-                                <span>mohsinuddin507@gmail.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fa-brands fa-linkedin"></i>
-                                <a href="https://linkedin.com/in/mohsin-uddin-162094303" target="_blank">linkedin.com/in/mohsin-uddin-162094303</a>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fa-solid fa-globe"></i>
-                                <a href="https://mohsinuddin507.github.io/Mohsin" target="_blank">mohsinuddin507.github.io/Mohsin</a>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
                             </div>
                         </div>
                     </div>
                     <div class="hero-image">
-                        <img src="Mypic.jpg" alt="Mohsin Uddin">
+                        <div class="image-container">
+                            <img src="Mypic.jpg" alt="Mohsin Uddin - Full Stack Developer">
+                            <div class="image-border"></div>
+                        </div>
+                        <div class="hero-connect">
+                            <div class="connect-item">
+                                <i class="fa-solid fa-map-marker-alt"></i>
+                                <span>Karachi, Pakistan</span>
+                            </div>
+                            <div class="connect-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:mohsinuddin507@gmail.com">mohsinuddin507@gmail.com</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Profile Section -->
-        <section id="profile">
+        <!-- About Section -->
+        <section id="about" class="section">
             <div class="container">
-                <h2>Profile</h2>
-                <div class="profile-content">
-                    <p>Results-driven Full Stack Developer with experience in building secure, scalable web and mobile applications. Skilled in Laravel, React.js, Flutter, and SQL-based databases. Proven ability to deliver high-quality solutions and maintain responsive, user-focused interfaces.</p>
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate developer with a focus on delivering quality solutions</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a results-driven Full Stack Developer with extensive experience in building secure, scalable web and mobile applications. My expertise spans across Laravel, React.js, Flutter, and SQL-based databases, with a proven track record of delivering high-quality solutions.</p>
+                        <p>With a strong background in both frontend and backend development, I specialize in creating responsive, user-focused interfaces and robust server-side architectures. I thrive in dynamic environments where I can apply my problem-solving skills to create innovative digital solutions.</p>
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Full Stack Development</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Mobile App Development</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Database Design</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>API Development</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-info">
+                        <div class="info-card">
+                            <div class="info-item">
+                                <i class="fa-solid fa-user"></i>
+                                <div>
+                                    <h4>Name</h4>
+                                    <p>Mohsin Uddin</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+92 345 2522582</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Nazimabad, Karachi</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <div>
+                                    <h4>Availability</h4>
+                                    <p>Open to Opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills">
+        <section id="skills" class="section bg-light">
             <div class="container">
-                <h2>Technical Skills</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-subtitle">Technologies I work with</p>
+                </div>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3><i class="fa-solid fa-desktop"></i> Frontend</h3>
-                        <ul>
-                            <li>React.js</li>
-                            <li>JavaScript (ES6+)</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Bootstrap</li>
-                            <li>Material UI</li>
-                        </ul>
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-desktop"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">React.js</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML5/CSS3</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 98%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Bootstrap</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="skill-category">
-                        <h3><i class="fa-solid fa-server"></i> Backend</h3>
-                        <ul>
-                            <li>Laravel (PHP)</li>
-                            <li>Node.js</li>
-                            <li>RESTful APIs</li>
-                            <li>GraphQL</li>
-                            <li>Firebase Auth</li>
-                        </ul>
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Laravel</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">REST APIs</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Firebase</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="skill-category">
-                        <h3><i class="fa-solid fa-database"></i> Databases</h3>
-                        <ul>
-                            <li>MySQL</li>
-                            <li>SQL Server</li>
-                            <li>Firebase</li>
-                            <li>SQLite</li>
-                        </ul>
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-database"></i>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQL Server</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQLite</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Firebase DB</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="skill-category">
-                        <h3><i class="fa-solid fa-mobile-alt"></i> Mobile</h3>
-                        <ul>
-                            <li>Flutter (Dart) – Android & iOS</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fa-solid fa-tools"></i> Tools</h3>
-                        <ul>
-                            <li>Git/GitHub</li>
-                            <li>Postman</li>
-                            <li>VS Code</li>
-                        </ul>
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-mobile-alt"></i>
+                            <h3>Mobile</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Flutter</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Dart</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Experience Section -->
-        <section id="experience">
+        <section id="experience" class="section">
             <div class="container">
-                <h2>Experience</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Professional Journey</h2>
+                    <p class="section-subtitle">My work experience and career progression</p>
+                </div>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fa-solid fa-code"></i>
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-line"></div>
                         </div>
                         <div class="timeline-content">
-                            <h3>Full Stack Developer (Part-Time)</h3>
-                            <p class="company">SanaTax Software House, Karachi</p>
-                            <p class="duration">Aug 2025 – Present</p>
-                            <p class="project">Project: IMS System – Ongoing Web & Mobile Application</p>
-                            <p class="tech-stack">Tech Stack: Laravel, React, Flutter, MySQL, SQL Server, Firebase, JWT, Laravel Sanctum</p>
+                            <div class="timeline-header">
+                                <h3>Full Stack Developer</h3>
+                                <span class="timeline-badge">Current</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="company">SanaTax Software House</span>
+                                <span class="duration">Aug 2025 - Present</span>
+                            </div>
+                            <div class="project-highlight">
+                                <span class="project-label">Project:</span>
+                                <span class="project-name">IMS System</span>
+                            </div>
+                            <p class="project-description">Developing comprehensive Inventory Management System with web and mobile interfaces.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
                         </div>
                     </div>
+
                     <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fa-solid fa-gears"></i>
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-line"></div>
                         </div>
                         <div class="timeline-content">
-                            <h3>System Support Engineer</h3>
-                            <p class="company">Marriott Karachi Hotel</p>
-                            <p class="duration">May 2025 – Present</p>
-                            <ul>
-                                <li>Resolved system, software, and network issues ensuring smooth IT operations</li>
+                            <div class="timeline-header">
+                                <h3>System Support Engineer</h3>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="company">Marriott Karachi Hotel</span>
+                                <span class="duration">May 2025 - Present</span>
+                            </div>
+                            <ul class="responsibilities">
+                                <li>Managed and maintained IT infrastructure for hotel operations</li>
+                                <li>Provided technical support for hardware and software issues</li>
+                                <li>Ensured network security and system reliability</li>
+                                <li>Implemented system upgrades and improvements</li>
                             </ul>
                         </div>
                     </div>
+
                     <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fa-solid fa-chalkboard-teacher"></i>
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
                         </div>
                         <div class="timeline-content">
-                            <h3>IT Faculty</h3>
-                            <p class="company">Aptech Garden Centre</p>
-                            <p class="duration">Jun 2024 – May 2025</p>
-                            <ul>
-                                <li>Trained students in Web Development, JavaScript, and React with practical projects</li>
+                            <div class="timeline-header">
+                                <h3>IT Faculty</h3>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="company">Aptech Garden Centre</span>
+                                <span class="duration">Jun 2024 - May 2025</span>
+                            </div>
+                            <ul class="responsibilities">
+                                <li>Instructed students in web development technologies</li>
+                                <li>Developed curriculum for JavaScript and React courses</li>
+                                <li>Guided students through practical projects and assignments</li>
+                                <li>Mentored aspiring developers in industry best practices</li>
                             </ul>
                         </div>
                     </div>
@@ -193,152 +376,311 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects">
+        <section id="projects" class="section bg-light">
             <div class="container">
-                <h2>Featured Projects</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="project-header">
-                            <h3>AzFamTech Website</h3>
-                            <span class="project-status">Live Web Application</span>
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400" alt="AzFamTech Website">
+                            <div class="project-overlay">
+                                <a href="https://www.azfamtech.com/login" target="_blank" class="btn btn-view">
+                                    <i class="fa-solid fa-external-link"></i>
+                                </a>
+                            </div>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300" alt="AzFamTech Website">
-                        <p class="project-description">Developed and maintained dynamic web application for business operations with secure login/authentication and responsive UI.</p>
-                        <div class="project-tech">
-                            <span>Laravel</span>
-                            <span>React.js</span>
-                            <span>MySQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.azfamtech.com/login" target="_blank" class="primary-btn">
-                                <i class="fa-solid fa-external-link"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Portfolio Website</h3>
-                            <span class="project-status">Personal Project</span>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=500&h=300" alt="Portfolio Website">
-                        <p class="project-description">Personal portfolio website showcasing skills, projects, and experience with modern UI/UX design.</p>
-                        <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://ihadi.net/" target="_blank" class="primary-btn">
-                                <i class="fa-solid fa-external-link"></i> Live Demo
-                            </a>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>AzFamTech Platform</h3>
+                                <span class="project-status">Live</span>
+                            </div>
+                            <p class="project-description">Complete business management platform with user authentication, inventory management, and reporting features.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Laravel</span>
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">REST API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.azfamtech.com/login" target="_blank" class="project-link">
+                                    <i class="fa-solid fa-globe"></i> Live Demo
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Education Section -->
-        <section id="education">
-            <div class="container">
-                <h2>Education</h2>
-                <div class="education-grid">
-                    <div class="education-item">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <h3>BS Physics</h3>
-                        <p class="institution">Federal Urdu University</p>
-                        <p class="duration">2020 – 2024</p>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400" alt="Portfolio Website">
+                            <div class="project-overlay">
+                                <a href="https://ihadi.net/" target="_blank" class="btn btn-view">
+                                    <i class="fa-solid fa-external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Portfolio Website</h3>
+                                <span class="project-status">Personal</span>
+                            </div>
+                            <p class="project-description">Modern, responsive portfolio website showcasing skills, experience, and projects with interactive animations.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Typed.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://ihadi.net/" target="_blank" class="project-link">
+                                    <i class="fa-solid fa-globe"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="education-item">
-                        <i class="fa-solid fa-certificate"></i>
-                        <h3>Diploma in Software Engineering</h3>
-                        <p class="institution">Aptech</p>
-                        <p class="duration">2019 – 2021</p>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h-400" alt="IMS System">
+                            <div class="project-overlay">
+                                <span class="project-type">Mobile App</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>IMS Mobile App</h3>
+                                <span class="project-status">In Progress</span>
+                            </div>
+                            <p class="project-description">Cross-platform mobile application for inventory management with real-time synchronization and barcode scanning.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Dart</span>
+                                <span class="tech-badge">Firebase</span>
+                                <span class="tech-badge">REST API</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Languages Section -->
-        <section id="languages">
+        <section id="languages" class="section">
             <div class="container">
-                <h2>Languages</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Languages</h2>
+                </div>
                 <div class="languages-grid">
                     <div class="language-item">
-                        <i class="fa-solid fa-language"></i>
-                        <h3>Urdu</h3>
-                        <p>Native</p>
+                        <div class="language-icon">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                        <div class="language-info">
+                            <h3>Urdu</h3>
+                            <p>Native Proficiency</p>
+                            <div class="language-level">
+                                <div class="level-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="language-item">
-                        <i class="fa-solid fa-language"></i>
-                        <h3>English</h3>
-                        <p>Basic Communication</p>
+                        <div class="language-icon">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                        <div class="language-info">
+                            <h3>English</h3>
+                            <p>Professional Working</p>
+                            <div class="language-level">
+                                <div class="level-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
+        <section id="contact" class="section bg-dark">
             <div class="container">
-                <h2>Contact Me</h2>
-                <p>Feel free to reach out to me via email, phone, or the form below. I'd love to hear from you!</p>
+                <div class="section-header">
+                    <h2 class="section-title text-white">Get In Touch</h2>
+                    <p class="section-subtitle text-light">Let's discuss your next project</p>
+                </div>
                 <div class="contact-content">
-                    <!-- Contact Info -->
                     <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>mohsinuddin507@gmail.com</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-phone"></i>
-                            <p>+92 345 2522582</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-map-marker-alt"></i>
-                            <p>Nazimabad No. 1, Karachi, Pakistan</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <p><a href="https://linkedin.com/in/mohsin-uddin-162094303" target="_blank">linkedin.com/in/mohsin-uddin-162094303</a></p>
+                        <div class="contact-card">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:mohsinuddin507@gmail.com">mohsinuddin507@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+923452522582">+92 345 2522582</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>Karachi, Pakistan</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/mohsin-uddin-162094303" target="_blank">/mohsin-uddin</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Contact Form -->
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" required placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" required placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" required placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="primary-btn">
-                            <i class="fa-solid fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" required placeholder="Your Message" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">MU</div>
+                <p class="footer-text">Building digital solutions that make a difference</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/mohsin-uddin-162094303" target="_blank" class="social-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:mohsinuddin507@gmail.com" class="social-link">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="tel:+923452522582" class="social-link">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="https://github.com/mohsinuddin507" target="_blank" class="social-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <p class="footer-copyright">© 2024 Mohsin Uddin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Typed.js initialization
             const options = {
-                strings: ['Mohsin Uddin', 'a Full Stack Developer', 'a Laravel Expert', 'a React Developer'],
+                strings: ['Mohsin Uddin', 'a Full Stack Developer', 'a Laravel Expert', 'a Mobile Developer'],
                 typeSpeed: 100,
                 backSpeed: 50,
                 loop: true,
+                cursorChar: '|'
             };
-
             new Typed('.typed-text', options);
+
+            // Mobile menu toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                mobileMenuBtn.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking links
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerHeight = document.querySelector('nav').offsetHeight;
+                        const targetPosition = target.offsetTop - headerHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Form submission
+            const contactForm = document.getElementById('contact-form');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    message: document.getElementById('message').value
+                };
+                console.log('Form submitted:', formData);
+                alert('Thank you for your message! I will get back to you soon.');
+                contactForm.reset();
+            });
+
+            // Loading screen
+            setTimeout(() => {
+                document.getElementById('loading-screen').style.display = 'none';
+            }, 1500);
         });
 
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.9)';
+                navbar.style.boxShadow = 'none';
+            }
         });
     </script>
     <script src="animations.js"></script>
